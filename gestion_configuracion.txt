@@ -1,0 +1,5 @@
+*Para el desarrollo del backend usaremos:
+
+-Lenguaje: Java.
+
+-Framework: Spring boot con Java.
