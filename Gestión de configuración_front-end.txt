@@ -1,0 +1,5 @@
+Gestión de configuración
+
+- Editor de código: Visual Studio Code
+- Extensiones editor de codigo: Prettier Coder formatter, Live Server, JavaScript (ES6) code snippets, Material Icon Theme, Path intellisense,
+  HTML CSS Support, IntelliSense for CSS class nam
