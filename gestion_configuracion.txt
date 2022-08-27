@@ -1,0 +1,4 @@
+* Programas usados
+
+- diagrams.net para realizar el diagrama de base de datos
+- PostgreSQL para crear y adminitrar la base de datos
