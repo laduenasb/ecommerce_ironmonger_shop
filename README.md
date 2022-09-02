@@ -2,4 +2,7 @@
 Ecommerce de una ferreteria
 Mockup: https://www.figma.com/file/pQgemQmtpGpt72Lj9PtHX3/E-commerce?node-id=0%3A1
 
-Historias de usuario: https://trello.com/b/xECXXmk4/e-commerce
+Historias de usuario (trello): https://trello.com/b/xECXXmk4/e-commerce
+
+
+Conformación del equipo https://docs.google.com/document/d/1aInVQuaUD7cmDPeMSCtyDSimqDSEj93n/edit
