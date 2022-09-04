@@ -17,7 +17,7 @@ public class ProductoService {
 //    }
 
     //ACCIONES
-    public List<Producto> getProductos(){
+    public List<Producto> consultarProductos(){
         return productoRepository.findAll();
     }
     public Producto guardarProducto(Producto producto) {

@@ -26,7 +26,7 @@ public class ProductoController {
     //ACCIONES
     @GetMapping("/obtenerProductos")
     public List<Producto> getProducto() {
-        return productoService.getProductos();
+        return productoService.consultarProductos();
     }
     @PostMapping("/guardarProducto")
     public Producto guardarProducto(@RequestBody ProductoDTO productoDTO) {
