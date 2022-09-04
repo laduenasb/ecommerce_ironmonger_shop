@@ -6,3 +6,5 @@ Historias de usuario (trello): https://trello.com/b/xECXXmk4/e-commerce
 
 
 Conformación del equipo https://docs.google.com/document/d/1aInVQuaUD7cmDPeMSCtyDSimqDSEj93n/edit
+
+Endpoints desarrollo backend Postman: https://documenter.getpostman.com/view/23052515/VUxUN5Ge
