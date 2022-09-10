@@ -30,7 +30,7 @@ public class Producto {
     private String miniatura;
     @Column
     private String imagen;
-    @Column
+    @Column(unique = true)
     private String sku;
     @Column
     private int stock;
