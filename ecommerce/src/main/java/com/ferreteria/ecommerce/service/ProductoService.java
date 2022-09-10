@@ -45,4 +45,7 @@ public class ProductoService {
             return false;
         }
     }
+    public Producto encontrarProductoPorSku(String sku){
+        return productoRepository.findBySku(sku);
+    }
 }

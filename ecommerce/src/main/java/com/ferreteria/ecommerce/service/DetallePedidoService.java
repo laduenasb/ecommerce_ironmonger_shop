@@ -1,6 +1,7 @@
 package com.ferreteria.ecommerce.service;
 
 import com.ferreteria.ecommerce.model.DetallePedido;
+import com.ferreteria.ecommerce.model.Pedido;
 import com.ferreteria.ecommerce.repository.DetallePedidoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -38,5 +39,8 @@ public class DetallePedidoService {
         } else {
             return false;
         }
+    }
+    public List<DetallePedido> consultarDetallesPorPedido(Pedido pedido){
+        return detallePedidoRepository.findByPedido(pedido);
     }
 }

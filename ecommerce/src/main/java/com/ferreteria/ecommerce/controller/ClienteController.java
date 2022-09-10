@@ -29,6 +29,10 @@ public class ClienteController {
     public Cliente obtenerClientePorId(@PathVariable Long cliente_id){
         return clienteService.encontrarClientePorID(cliente_id);
     }
+    @GetMapping("/obtenerClientePorCedula/{cedula}")
+    public Cliente obtenerClientePorCedula(@PathVariable String cedula){
+        return clienteService.encontrarClientePorCedula(cedula);
+    }
     //UPDATE
     @PutMapping("/actualizarCliente")
     public Cliente actualizarCliente(@RequestBody Cliente cliente){

@@ -35,6 +35,10 @@ public class ProductoController {
     public Producto encontrarProductoPoriD(@PathVariable Long producto_id){
         return productoService.encontrarProductoPorID(producto_id);
     }
+    @GetMapping("/encontrarProductoPorSku/{sku}")
+    public Producto encontrarProductoPorSku(@PathVariable String sku){
+        return productoService.encontrarProductoPorSku(sku);
+    }
     //UPDATE
     @PutMapping("/actualizarProducto")
     public Producto actualizarProducto(@RequestBody ProductoDTO productoDTO){

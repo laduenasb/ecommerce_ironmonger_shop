@@ -2,6 +2,7 @@ package com.ferreteria.ecommerce.controller;
 
 import com.ferreteria.ecommerce.dto.DetallePedidoDTO;
 import com.ferreteria.ecommerce.model.DetallePedido;
+import com.ferreteria.ecommerce.model.Pedido;
 import com.ferreteria.ecommerce.service.DetallePedidoService;
 import com.ferreteria.ecommerce.service.PedidoService;
 import com.ferreteria.ecommerce.service.ProductoService;
@@ -36,6 +37,12 @@ public class DetallePedidoController {
     @GetMapping("/encontrarDetallePedidoPorId/{detalle_pedido_id}")
     public DetallePedido encontrarDetallePedidoPorId(@PathVariable Long detalle_pedido_id){
         return detallePedidoService.consultarDetallePorId(detalle_pedido_id);
+    }
+    @GetMapping("/encontrarDetallesPorPedido/{pedido_id}")
+    public List<DetallePedido> encontrarDetallesPorPedido(@PathVariable Long pedido_id){
+        Pedido pedido = new Pedido();
+        pedido=pedidoService.encontrarPedidoPorId(pedido_id);
+        return detallePedidoService.consultarDetallesPorPedido(pedido);
     }
     //UPDATE
     @PutMapping("/actualizarDetallePedido")

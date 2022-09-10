@@ -5,6 +5,7 @@ import com.ferreteria.ecommerce.repository.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ClienteService {
@@ -38,5 +39,9 @@ public class ClienteService {
         } else {
             return false;
         }
+    }
+
+    public Cliente encontrarClientePorCedula(String cedula){
+        return clienteRepository.findByCedula(cedula);
     }
 }

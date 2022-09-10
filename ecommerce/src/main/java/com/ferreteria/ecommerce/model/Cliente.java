@@ -26,6 +26,6 @@ public class Cliente {
     private String apellidos;
     @Column
     private String numero_celular;
-    @Column
+    @Column(unique = true)
     private String cedula;
 }
