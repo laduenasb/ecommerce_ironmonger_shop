@@ -19,7 +19,7 @@ public class Cliente {
     @Column
     private String correo;
     @Column
-    private String contraseña;
+    private String contrasenia;
     @Column
     private String nombre;
     @Column

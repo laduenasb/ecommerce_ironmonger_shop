@@ -14,7 +14,29 @@ public class PedidoService {
     public List<Pedido> consultarPedidos(){
         return pedidoRepository.findAll();
     }
-    public Pedido consultarPedidoPorId(Long pedido_id){
-        return pedidoRepository.findById(pedido_id).get();
+    public Pedido guardarPedido(Pedido pedido){
+        return pedidoRepository.save(pedido);
+    }
+    public Pedido encontrarPedidoPorId(Long pedido_id){
+        if(!pedidoRepository.findById(pedido_id).isEmpty()) {
+            return pedidoRepository.findById(pedido_id).get();
+        } else {
+            return null;
+        }
+    }
+    public Pedido actualizarPedido(Pedido pedido){
+        if(!pedidoRepository.findById(pedido.getPedido_id()).isEmpty()){
+            return pedidoRepository.save(pedido);
+        } else {
+            return null;
+        }
+    }
+    public boolean eliminarPedidoPorID(Long pedido_id){
+        if(!pedidoRepository.findById(pedido_id).isEmpty()){
+            pedidoRepository.deleteById(pedido_id);
+            return true;
+        } else {
+            return false;
+        }
     }
 }

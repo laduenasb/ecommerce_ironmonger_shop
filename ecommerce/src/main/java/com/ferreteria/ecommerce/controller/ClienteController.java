@@ -3,9 +3,7 @@ package com.ferreteria.ecommerce.controller;
 import com.ferreteria.ecommerce.model.Cliente;
 import com.ferreteria.ecommerce.service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,8 +15,28 @@ public class ClienteController {
     private ClienteService clienteService;
 
     //ACCIONES
+    //CREATE
+    @PostMapping("/guardarCliente")
+    public Cliente guardarCliente(@RequestBody Cliente cliente){
+        return clienteService.guardarCliente(cliente);
+    }
+    //READ
     @GetMapping("/consultarClientes")
     public List<Cliente> consultarClientes(){
         return clienteService.consultarClientes();
+    }
+    @GetMapping("/obtenerClientePorId/{cliente_id}")
+    public Cliente obtenerClientePorId(@PathVariable Long cliente_id){
+        return clienteService.encontrarClientePorID(cliente_id);
+    }
+    //UPDATE
+    @PutMapping("/actualizarCliente")
+    public Cliente actualizarCliente(@RequestBody Cliente cliente){
+        return clienteService.actualizarCliente(cliente);
+    }
+    //DELETE
+    @DeleteMapping("/eliminarCliente/{cliente_id}")
+    public boolean eliminarCliente(@PathVariable Long cliente_id){
+        return clienteService.eliminarCliente(cliente_id);
     }
 }

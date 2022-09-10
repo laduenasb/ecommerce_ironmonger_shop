@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 
 public class ProductoDTO {
+    private Long producto_id;
     private Long categoria_id;
     private double precio;
     private String nombre;
@@ -22,6 +23,7 @@ public class ProductoDTO {
     private int stock;
     public Producto obtenerProducto(ProductoDTO productoDTO){
         Producto producto = new Producto();
+        producto.setProducto_id(productoDTO.getProducto_id());
         producto.setPrecio(productoDTO.getPrecio());
         producto.setNombre(productoDTO.getNombre());
         producto.setPeso(productoDTO.getPeso());

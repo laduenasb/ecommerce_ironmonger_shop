@@ -13,7 +13,8 @@ import javax.persistence.*;
 @Table(name="Producto")
 public class Producto {
     //ATRIBUTOS
-    @Id @GeneratedValue(strategy = GenerationType.AUTO) @Column
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column
     private Long producto_id;
     @ManyToOne @JoinColumn(name="categoria_id")
     private Categoria categoria;

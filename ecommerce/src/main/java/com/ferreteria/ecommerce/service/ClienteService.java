@@ -17,10 +17,19 @@ public class ClienteService {
         return clienteRepository.save(cliente);
     }
     public Cliente encontrarClientePorID(Long cliente_id){
-        return clienteRepository.findById(cliente_id).get();
+        if(!clienteRepository.findById(cliente_id).isEmpty()) {
+            return clienteRepository.findById(cliente_id).get();
+        } else {
+            return null;
+        }
     }
     public Cliente actualizarCliente(Cliente cliente){
-        return clienteRepository.save(cliente);
+        if(!clienteRepository.findById(cliente.getCliente_id()).isEmpty()){
+            return clienteRepository.save(cliente);
+        } else {
+            return null;
+        }
+
     }
     public boolean eliminarCliente(Long cliente_id){
         if (!clienteRepository.findById(cliente_id).isEmpty()){

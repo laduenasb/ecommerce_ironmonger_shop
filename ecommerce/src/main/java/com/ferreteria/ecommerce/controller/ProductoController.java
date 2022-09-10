@@ -17,22 +17,35 @@ public class ProductoController {
     private ProductoService productoService;
     @Autowired
     private CategoriaService categoriaService;
-    //CONSTRUCTORES
-
-    //	public StudentController(StudentService studentService){
-//
-//		this.studentService=studentService;
-//	}
     //ACCIONES
-    @GetMapping("/obtenerProductos")
-    public List<Producto> getProducto() {
-        return productoService.consultarProductos();
-    }
+    //CREATE
     @PostMapping("/guardarProducto")
     public Producto guardarProducto(@RequestBody ProductoDTO productoDTO) {
         Producto producto=new Producto();
         producto=productoDTO.obtenerProducto(productoDTO);
         producto.setCategoria(categoriaService.encontrarCategoriaPorID(productoDTO.getCategoria_id()));
         return productoService.guardarProducto(producto);
+    }
+    //READ
+    @GetMapping("/obtenerProductos")
+    public List<Producto> obtenerProducto() {
+        return productoService.consultarProductos();
+    }
+    @GetMapping("/encontrarProductoPorId/{producto_id}")
+    public Producto encontrarProductoPoriD(@PathVariable Long producto_id){
+        return productoService.encontrarProductoPorID(producto_id);
+    }
+    //UPDATE
+    @PutMapping("/actualizarProducto")
+    public Producto actualizarProducto(@RequestBody ProductoDTO productoDTO){
+        Producto producto=new Producto();
+        producto=productoDTO.obtenerProducto(productoDTO);
+        producto.setCategoria(categoriaService.encontrarCategoriaPorID(productoDTO.getCategoria_id()));
+        return productoService.actualizarProducto(producto);
+    }
+    //DELETE
+    @DeleteMapping("/eliminarProducto/{producto_id}")
+    public boolean eliminarProducto(@PathVariable Long producto_id){
+        return productoService.eliminarProducto(producto_id);
     }
 }
