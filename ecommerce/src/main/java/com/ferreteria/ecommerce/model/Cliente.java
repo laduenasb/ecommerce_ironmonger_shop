@@ -13,8 +13,7 @@ import javax.persistence.*;
 @Table(name = "Cliente")
 public class Cliente {
     //ATRIBUTOS
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column
+    @Id @Column @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long cliente_id;
     @Column
     private String correo;

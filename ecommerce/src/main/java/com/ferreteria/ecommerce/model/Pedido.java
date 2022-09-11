@@ -15,8 +15,7 @@ import java.util.Date;
 @Table(name = "Pedido")
 public class Pedido {
     //ATRIBUTOS
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column
+    @Id @Column @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long pedido_id;
     @ManyToOne @JoinColumn(name = "cliente_id")
     private Cliente cliente;

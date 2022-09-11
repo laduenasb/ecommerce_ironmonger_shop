@@ -13,9 +13,7 @@ import javax.persistence.*;
 @Table(name="Detalles_Pedido")
 public class DetallePedido {
     //ATRIBUTOS
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column
+    @Id @Column @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long detalle_id;
     @ManyToOne @JoinColumn(name="pedido_id")
     private Pedido pedido;
