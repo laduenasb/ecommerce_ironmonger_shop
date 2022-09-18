@@ -1,0 +1,8 @@
+{
+    "name": "ferreteria-ecommerce-backend",
+    "buildpacks": [
+      {
+        "url": "heroku/maven"
+      }
+    ]
+  }
