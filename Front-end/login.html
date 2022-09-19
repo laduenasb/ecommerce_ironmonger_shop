@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr"> 
+    <head> 
+        <script src="https://kit.fontawesome.com/0b5a18e659.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-16"/> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Login | Ecommerce | Ferreteria </title> 
+        <link rel="icon" type="image/png" href="/img/logo.png"/>
+        <link rel="stylesheet" href="/css/style_login.css"/>
+        <script src="/scripts/scrip_login.js" defer></script>
+        
+    </head>
+    <body>
+        <header class="header">            
+                <div class="logo">
+                    <img src="img/logo.png" alt="" />
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="/nosotros.html">Nosotros</a></li>
+                        <li><a href="/tienda.html">Tienda</a></li>
+                        <li><a href="/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="buscar">
+                    <input type="text" placeholder="Busar" required>
+                    <div class="btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <section class="botones-login-carrito">
+                    <a href="login.html" class="fa-solid fa-user"></a>
+                    <a href="carrito.html" class="fa-solid fa-cart-shopping"></a>
+                </section>    
+        </header>
+        <section id="section-login">
+            <div class="login-box">
+                    <h1>Inicio sesión</h1>
+                    <form class="login-form">
+                        <input type="email" id="correo" required placeholder="Correo"/>
+                        <input type="password" id="contrasenia" required placeholder="Contraseña"/>
+                        <button type="submit">Enviar</button>
+                    </form>
+            </div>
+            <div class="registro-box">
+                    <h1>Registrate</h1>
+                    <form class="registro-form">
+                        
+                        <input type="text" id="cedula" required placeholder="Cédula"/>
+                        <input type="text" id="nombre" required placeholder="Nombres"/>
+                        <input type="text" id="apellidos" required placeholder="Apellidos"/>
+                        <input type="text" id="numero_celular" required placeholder="Número de celular"/>
+                        <input type="text" id="direccion_pedido" required placeholder="Dirección"/>
+                        <input type="email" id="correo" required placeholder="Correo"/>
+                        <input type="password" id="contrasenia"required placeholder="Contraseña"/>
+                        <button type="submit">Registrarse</button>
+                    </form>
+            </div>
+        </section>
+        <script src="/scrip.js"></script>
+        
+        <section class="botones-redess">
+            <a href="https://www.facebook.com/homecentercolombia" target="_blank" class="fa-brands fa-facebook"></a>
+            <a href="https://www.youtube.com/c/homecentercolombia" target="_blank" class="fa-brands fa-youtube"></a>
+        </section>  
+    </body>
+</html>

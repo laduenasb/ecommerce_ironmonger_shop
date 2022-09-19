@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap');
+*{
+    font-family:"Asap", sans-serif;
+    box-sizing:border-box;
+    margin: 0; padding: 0;    
+    outline:none; border:none;
+    text-decoration:none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+
+
+body{
+    margin:0px;
+    background-image: url(/img/login.jpg);
+    background-size: cover;
+    background-attachment: fixed;    
+}
+
+
+.header{
+    position:fixed;
+    background-color: #FFFDF6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    width: 100%;    
+    padding: 5px 10%;
+}
+.header .logo{
+    cursor: pointer;
+        
+}
+.header .logo img{
+    height: 85px;
+    width: auto;
+    transition: all 0.3s;
+    
+}
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+.header .nav-links li{
+    display:inline-block;
+    padding: 0 20px;
+}
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+.header .nav-links a{
+    font-size: 35px;
+    color:  #E67125;
+    text-decoration: none;
+}
+.header .nav-links li a:hover{
+    color: #F6DB35;
+}
+.buscar{
+    position: relative;
+    padding: 5px;
+}
+.buscar input{
+    width: 240px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #F6DB35;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition:all 0.6s ease;
+}
+.btn{
+    position:absolute;
+    top:0;
+    right:0;
+    background-color: #E67125;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align:center;
+    color: white;
+    font-size: 20px;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.botones-login-carrito a{
+    position:relative;
+    top:0;
+    right:0;
+    background-color: #E67125;
+    justify-content: space-around;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align:center;
+    color: white;
+    font-size: 20px;
+    border-radius:30px;
+    cursor:pointer;
+    text-decoration:none;
+}
+.botones-login-carrito a:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 700px) {
+    .header{
+        flex-direction: column;
+    }
+}
+
+
+
+    
+
+.botones-redess{
+    position:absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.botones-redess a{    
+    background-color: #E67125;
+    justify-content: space-around;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align:center;
+    color: white;
+    font-size: 20px;
+    border-radius:30px;
+    cursor:pointer;
+    text-decoration:none;
+}
+.botones-redess a:hover{
+    transform: scale(1.2);
+}
+
+
+
+.login-box {
+    position: absolute;
+    left:150px;
+    top:230px;
+    z-index: 1;
+    background: #FFFFFF;
+    width: 500px;
+    height: 400px;    
+    padding: 45px;
+    text-align:center; 
+    border-radius: 10px;
+    color: #E67125;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.login-box h1{
+    height: 60px;
+    font-size: 40px;
+}
+.login-box input {
+    font-family: sans-serif;
+    outline: 0;
+    background: #E3DAC9;
+    width: 100%;
+    border: 0;
+    border-radius: 30px;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.login-box button {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #E67125;
+    width: 100%;
+    border: 0;
+    border-radius: 30px;
+    margin-top: 5%;        
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.login-box  button:hover,.form button:active,.form button:focus {
+    background: #f4a61f;
+}
+
+
+
+
+.registro-box{
+    position: absolute;
+    right: 150px;
+    top:230px;
+    z-index: 1;
+    background: #FFFFFF;
+    width: 700px;
+    height: 400px;
+    padding: 45px;
+    text-align:center;
+    border-radius: 10px;
+    color: #E67125;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.registro-box h1{
+    height: 60px;
+    font-size: 40px;
+}
+.registro-form{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.registro-box input {
+    font-family: sans-serif;
+    outline: 0;
+    background: #E3DAC9;
+    width: 100%;
+    border: 0;
+    border-radius: 30px;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.registro-box button {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #E67125;
+    width: 100%;
+    border-radius: 30px; 
+    margin: 0 0 15px;
+    border: 0;   
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.registro-box button:hover,.form button:active,.form button:focus {
+    background: #f4a61f;
+}
+
+
+
