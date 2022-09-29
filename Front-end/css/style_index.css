@@ -9,7 +9,7 @@
 }
 body{
     margin:0;
-    background-image: url(\Front-end\img\bd.jpg);
+    background-image: url("../img/bd.jpg");
     background-size: cover;
     background-attachment: fixed;    
 }

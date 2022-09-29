@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title> Login | Ecommerce | Ferreteria </title> 
         <link rel="icon" type="image/png" href="img/logo.png"/>
-        <link rel="stylesheet" href="css\style_login.css"/>
+        <link rel="stylesheet" href="css/style_login.css"/>
         
         
     </head>
@@ -25,7 +25,7 @@
                     </ul>
                 </nav>
                 <div class="buscar">
-                    <input type="text" placeholder="Busar" required>
+                    <input type="text" placeholder="Buscar" required>
                     <div class="btn">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
@@ -46,7 +46,7 @@
             </div>
             <div class="registro-box">
                     <h1>Registrate</h1>
-                    <form class="registro-form">
+                    <form class="registro-form" onsubmit="getDataForm(event)">
                         
                         <input type="text" id="cedula" required placeholder="Cédula"/>
                         <input type="text" id="nombre" required placeholder="Nombres"/>
@@ -59,7 +59,9 @@
                     </form>
             </div>
         </section>
-        <script src="scrip_login.js"></script>
+        <script src="scripts/scrip_login.js"></script>
+        <script src="scripts/registro.js"></script>
+
         
         <section class="botones-redess">
             <a href="https://www.facebook.com/homecentercolombia" target="_blank" class="fa-brands fa-facebook"></a>
