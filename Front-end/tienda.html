@@ -9,6 +9,8 @@
         <link rel="icon" type="image/png" href="/img/logo.png"/>
         <link rel="stylesheet" href="css/style_tienda.css"/>
         <script src="/scripts/scrip_tienda.js" defer></script>
+        <script src="./scripts/tienda.js" defer></script>
+
                 
     </head>
     <body> 
@@ -25,7 +27,7 @@
                 </ul>
             </nav>
             <div class="buscar">
-                <input type="text" placeholder="Busar" required>
+                <input type="text" placeholder="Buscar" required>
                 <div class="btn">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
@@ -52,31 +54,12 @@
                     
                     <!--<h3 class="titulo">Pintura</h3>-->
 
-                    <div class="contenedor-productos">
-
-                        <div class="producto" data-name="p-1">
+                    <div class="contenedor-productos" id="pinturas">
+                        <!-- <div class="producto" data-name="p-015">
                             <img src="/img/logo.png" alt="">
-                            <h3>Producto 1</h3>
+                            <h3>Producto 015</h3>
                             <div class="precio">$00.000</div>
-                        </div>
-                    
-                        <div class="producto" data-name="p-2">
-                            <img src="/img/logo.png" alt="">
-                            <h3>Producto 2</h3>
-                            <div class="precio">$00.000</div>
-                        </div>
-                    
-                        <div class="producto" data-name="p-3">
-                            <img src="/img/logo.png" alt="">
-                            <h3>Producto 3</h3>
-                            <div class="precio">$00.000</div>
-                        </div>
-                    
-                        <div class="producto" data-name="p-4">
-                            <img src="/img/logo.png" alt="">
-                            <h3>Producto 4</h3>
-                            <div class="precio">$00.000</div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -88,38 +71,14 @@
 
                     <div class="contenedor-productos" id="herramientas-maquinaria">
 
-                        <div class="producto" data-name="p-5">
-                            <img src="/img/logo.png" alt="">
-                            <h3>Producto 5</h3>
-                            <div class="precio">$00.000</div>
-                        </div>
-                    
-                        <div class="producto" data-name="p-6">
-                            <img src="/img/logo.png" alt="">
-                            <h3>Producto 6</h3>
-                            <div class="precio">$00.000</div>
-                        </div>
-                    
-                        <div class="producto" data-name="p-7">
-                            <img src="/img/logo.png" alt="">
-                            <h3>Producto 7</h3>
-                            <div class="precio">$00.000</div>
-                        </div>
-                    
-                        <div class="producto" data-name="p-8">
-                            <img src="/img/logo.png" alt="">
-                            <h3>Producto 8</h3>
-                            <div class="precio">$00.000</div>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="productos-preview">
-
-            <div class="preview" data-target="p-1">
-                <i class="fas fa-times"></i>
+        <div class="productos-preview" id="preview-products">
+            <!-- <div class="preview" data-target="p-015">
+                <i class="fas fa-times" aria-hidden="true"></i>
                 <img src="/img/logo.png" alt="">
                 <h3>producto 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
@@ -128,99 +87,16 @@
                     <a href="#" class="comprar">comprar</a>
                     <a href="#" class="carro">añadir al carro</a>
                 </div>
-            </div>
-
-            <div class="preview" data-target="p-2">
-                <i class="fas fa-times"></i>
-                <img src="/img/logo.png" alt="">
-                <h3>producto 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-                <div class="precio">$00.000</div>
-                <div class="botones">
-                    <a href="#" class="comprar">comprar</a>
-                    <a href="#" class="carro">añadir al carro</a>
-                </div>
-            </div>
-
-            <div class="preview" data-target="p-3">
-                <i class="fas fa-times"></i>
-                <img src="/img/logo.png" alt="">
-                <h3>producto 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-                <div class="precio">$00.000</div>
-                <div class="botones">
-                    <a href="#" class="comprar">comprar</a>
-                    <a href="#" class="carro">añadir al carro</a>
-                </div>
-            </div>
-
-            <div class="preview" data-target="p-4">
-                <i class="fas fa-times"></i>
-                <img src="/img/logo.png" alt="">
-                <h3>producto 4</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-                <div class="precio">$00.000</div>
-                <div class="botones">
-                    <a href="#" class="comprar">comprar</a>
-                    <a href="#" class="carro">añadir al carro</a>
-                </div>
-            </div>
-
-            <div class="preview" data-target="p-5">
-                <i class="fas fa-times"></i>
-                <img src="/img/logo.png" alt="">
-                <h3>producto 5</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-                <div class="precio">$00.000</div>
-                <div class="botones">
-                    <a href="#" class="comprar">comprar</a>
-                    <a href="#" class="carro">añadir al carro</a>
-                </div>
-            </div>
-
-            <div class="preview" data-target="p-6">
-                <i class="fas fa-times"></i>
-                <img src="/img/logo.png" alt="">
-                <h3>producto 6</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-                <div class="precio">$00.000</div>
-                <div class="botones">
-                    <a href="#" class="comprar">comprar</a>
-                    <a href="#" class="carro">añadir al carro</a>
-                </div>
-            </div>
-
-            <div class="preview" data-target="p-7">
-                <i class="fas fa-times"></i>
-                <img src="/img/logo.png" alt="">
-                <h3>producto 7</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-                <div class="precio">$00.000</div>
-                <div class="botones">
-                    <a href="#" class="comprar">comprar</a>
-                    <a href="#" class="carro">añadir al carro</a>
-                </div>
-            </div>
-
-            <div class="preview" data-target="p-8">
-                <i class="fas fa-times"></i>
-                <img src="/img/logo.png" alt="">
-                <h3>producto 8</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
-                <div class="precio">$00.000</div>
-                <div class="botones">
-                    <a href="#" class="comprar">comprar</a>
-                    <a href="#" class="carro">añadir al carro</a>
-                </div>
-            </div>
-
+            </div> -->
+            
         </div>
+        <!-- <script src="./scripts/tienda.js"></script> -->
 
 
         <section class="botones-redess">
             <a href="https://www.facebook.com/homecentercolombia" target="_blank" class="fa-brands fa-facebook"></a>
             <a href="https://www.youtube.com/c/homecentercolombia" target="_blank" class="fa-brands fa-youtube"></a>
         </section> 
-        <script src="./scripts/tienda.js"></script>
+        <!-- <script src="./scripts/tienda.js"></script> -->
     </body>
 </html>    

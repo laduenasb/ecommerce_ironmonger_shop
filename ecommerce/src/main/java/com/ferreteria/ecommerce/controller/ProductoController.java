@@ -1,6 +1,7 @@
 package com.ferreteria.ecommerce.controller;
 
 import com.ferreteria.ecommerce.dto.ProductoDTO;
+import com.ferreteria.ecommerce.model.Categoria;
 import com.ferreteria.ecommerce.model.Producto;
 import com.ferreteria.ecommerce.service.CategoriaService;
 import com.ferreteria.ecommerce.service.ProductoService;
@@ -38,6 +39,10 @@ public class ProductoController {
     @GetMapping("/encontrarProductoPorSku/{sku}")
     public Producto encontrarProductoPorSku(@PathVariable String sku){
         return productoService.encontrarProductoPorSku(sku);
+    }
+    @GetMapping("/encontrarProductosPorCategoria/{nombre_categoria}")
+    public List<Producto> encontrarProductoPorCategoria(@PathVariable String nombre_categoria){
+        return productoService.encontrarProductoPorCategoria(nombre_categoria);
     }
     //UPDATE
     @PutMapping("/actualizarProducto")
