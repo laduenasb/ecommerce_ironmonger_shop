@@ -51,7 +51,7 @@ function preview_products(productos){
 
 
 async function main(){
-    let uri_productos="http://localhost:8083/api/v1/producto/encontrarProductosPorCategoria/"
+    let uri_productos="https://ferreteria-ecommerce-backend.herokuapp.com/api/v1/producto/encontrarProductosPorCategoria/"
     const productos_1= await obtener_productos(uri_productos,"Pinturas")
     const productos_2= await obtener_productos(uri_productos,"Herramientas-Maquinaria")
     mostrar_productos(productos_1,"pinturas")
