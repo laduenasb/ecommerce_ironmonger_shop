@@ -1,0 +1,226 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr"> 
+    <head> 
+        <script src="https://kit.fontawesome.com/0b5a18e659.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-16"/> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Tienda | Ecommerce | Ferreteria </title> 
+        <link rel="icon" type="image/png" href="/img/logo.png"/>
+        <link rel="stylesheet" href="css/style_tienda.css"/>
+        <script src="/scripts/scrip_tienda.js" defer></script>
+                
+    </head>
+    <body> 
+        <header class="header">
+            <div class="logo">
+                <img src="img/logo.png" alt="" />
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/nosotros.html">Nosotros</a></li>
+                    <li><a href="/tienda.html">Tienda</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="buscar">
+                <input type="text" placeholder="Busar" required>
+                <div class="btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <section class="botones-login-carrito">
+                <a href="/login.html" class="fa-solid fa-user"></a>
+                <a href="/carrito.html" class="fa-solid fa-cart-shopping"></a>
+            </section>    
+                    
+        </header>
+
+        <section>
+            <h1>Categorias</h1>
+            <ul>
+                <li class="active">Herramientas y Maquinaria</li>
+                <li >Pinturas</li>
+                            
+            </ul>
+        
+
+            <div class="productos"> 
+
+                <div class="contenedor" data-filter="pinturas">
+                    
+                    <!--<h3 class="titulo">Pintura</h3>-->
+
+                    <div class="contenedor-productos">
+
+                        <div class="producto" data-name="p-1">
+                            <img src="/img/logo.png" alt="">
+                            <h3>Producto 1</h3>
+                            <div class="precio">$00.000</div>
+                        </div>
+                    
+                        <div class="producto" data-name="p-2">
+                            <img src="/img/logo.png" alt="">
+                            <h3>Producto 2</h3>
+                            <div class="precio">$00.000</div>
+                        </div>
+                    
+                        <div class="producto" data-name="p-3">
+                            <img src="/img/logo.png" alt="">
+                            <h3>Producto 3</h3>
+                            <div class="precio">$00.000</div>
+                        </div>
+                    
+                        <div class="producto" data-name="p-4">
+                            <img src="/img/logo.png" alt="">
+                            <h3>Producto 4</h3>
+                            <div class="precio">$00.000</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="contenedor" data-filter="herramientas y maquinaria">
+                    
+                    <!--<h3 class="titulo">Herramientas y Maquinaria</h3>-->
+
+                    <div class="contenedor-productos" id="herramientas-maquinaria">
+
+                        <div class="producto" data-name="p-5">
+                            <img src="/img/logo.png" alt="">
+                            <h3>Producto 5</h3>
+                            <div class="precio">$00.000</div>
+                        </div>
+                    
+                        <div class="producto" data-name="p-6">
+                            <img src="/img/logo.png" alt="">
+                            <h3>Producto 6</h3>
+                            <div class="precio">$00.000</div>
+                        </div>
+                    
+                        <div class="producto" data-name="p-7">
+                            <img src="/img/logo.png" alt="">
+                            <h3>Producto 7</h3>
+                            <div class="precio">$00.000</div>
+                        </div>
+                    
+                        <div class="producto" data-name="p-8">
+                            <img src="/img/logo.png" alt="">
+                            <h3>Producto 8</h3>
+                            <div class="precio">$00.000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="productos-preview">
+
+            <div class="preview" data-target="p-1">
+                <i class="fas fa-times"></i>
+                <img src="/img/logo.png" alt="">
+                <h3>producto 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                <div class="precio">$00.000</div>
+                <div class="botones">
+                    <a href="#" class="comprar">comprar</a>
+                    <a href="#" class="carro">añadir al carro</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-2">
+                <i class="fas fa-times"></i>
+                <img src="/img/logo.png" alt="">
+                <h3>producto 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                <div class="precio">$00.000</div>
+                <div class="botones">
+                    <a href="#" class="comprar">comprar</a>
+                    <a href="#" class="carro">añadir al carro</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-3">
+                <i class="fas fa-times"></i>
+                <img src="/img/logo.png" alt="">
+                <h3>producto 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                <div class="precio">$00.000</div>
+                <div class="botones">
+                    <a href="#" class="comprar">comprar</a>
+                    <a href="#" class="carro">añadir al carro</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-4">
+                <i class="fas fa-times"></i>
+                <img src="/img/logo.png" alt="">
+                <h3>producto 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                <div class="precio">$00.000</div>
+                <div class="botones">
+                    <a href="#" class="comprar">comprar</a>
+                    <a href="#" class="carro">añadir al carro</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-5">
+                <i class="fas fa-times"></i>
+                <img src="/img/logo.png" alt="">
+                <h3>producto 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                <div class="precio">$00.000</div>
+                <div class="botones">
+                    <a href="#" class="comprar">comprar</a>
+                    <a href="#" class="carro">añadir al carro</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-6">
+                <i class="fas fa-times"></i>
+                <img src="/img/logo.png" alt="">
+                <h3>producto 6</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                <div class="precio">$00.000</div>
+                <div class="botones">
+                    <a href="#" class="comprar">comprar</a>
+                    <a href="#" class="carro">añadir al carro</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-7">
+                <i class="fas fa-times"></i>
+                <img src="/img/logo.png" alt="">
+                <h3>producto 7</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                <div class="precio">$00.000</div>
+                <div class="botones">
+                    <a href="#" class="comprar">comprar</a>
+                    <a href="#" class="carro">añadir al carro</a>
+                </div>
+            </div>
+
+            <div class="preview" data-target="p-8">
+                <i class="fas fa-times"></i>
+                <img src="/img/logo.png" alt="">
+                <h3>producto 8</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                <div class="precio">$00.000</div>
+                <div class="botones">
+                    <a href="#" class="comprar">comprar</a>
+                    <a href="#" class="carro">añadir al carro</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <section class="botones-redess">
+            <a href="https://www.facebook.com/homecentercolombia" target="_blank" class="fa-brands fa-facebook"></a>
+            <a href="https://www.youtube.com/c/homecentercolombia" target="_blank" class="fa-brands fa-youtube"></a>
+        </section> 
+        <script src="./scripts/tienda.js"></script>
+    </body>
+</html>    

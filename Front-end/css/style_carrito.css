@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap');
+
+
+*{
+    font-family:"Asap", sans-serif;
+    box-sizing:border-box;
+    margin: 0; padding: 0;    
+    outline:none; border:none;
+    text-decoration:none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+html{
+    font-size:60%;
+    overflow-x: hidden;
+}
+body{
+    background: #E5E7E9;
+}
+
+
+.header{
+    position:fixed;
+    background-color: #FFFDF6;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 85px;
+    width: 100%;
+    padding: 5px 10%;
+    overflow: hidden;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    min-width: 100px;
+    margin: auto;
+}
+.logo{
+    cursor: pointer;
+    float: left;
+        
+}
+.logo img{
+    height: 75px;
+    width: auto;
+    transition: all 0.3s;
+    
+}
+.logo img:hover{
+    transform: scale(1.2);
+}
+
+.header{
+    position:fixed;
+    background-color: #FFFDF6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    width: 100%;    
+    padding: 5px 10%;
+}
+.header .logo{
+    cursor: pointer;
+        
+}
+.header .logo img{
+    height: 90px;
+    width: auto;
+    transition: all 0.3s;
+    
+}
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+.header .nav-links li{
+    display:inline-block;
+    padding: 0 20px;
+}
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+.header .nav-links a{
+    font-size: 35px;
+    color:  #E67125;
+    text-decoration: none;
+}
+.header .nav-links li a:hover{
+    color: #F6DB35;
+}
+.buscar{
+    position: relative;
+    padding: 5px;
+}
+.buscar input{
+    width: 240px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #F6DB35;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition:all 0.6s ease;
+}
+.btn{
+    position:absolute;
+    top:0;
+    right:0;
+    background-color: #E67125;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align:center;
+    color: white;
+    font-size: 20px;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.botones-login-carrito a{
+    position:relative;
+    top:0;
+    right:0;
+    background-color: #E67125;
+    justify-content: space-around;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align:center;
+    color: white;
+    font-size: 20px;
+    border-radius:30px;
+    cursor:pointer;
+    text-decoration:none;
+}
+.botones-login-carrito a:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 700px) {
+    .header{
+        flex-direction: column;
+    }
+}
+
+
+
+#contenedor-carrito{
+    position:absolute;
+    left:15%;
+    top:150px;
+    
+}
+#contenedor-carrito h2{
+    position: relative;
+    text-align: auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #E67125;
+    font-size: 5em;    
+}
+#contendor-carrito table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#contenedor-carrito table thead{
+    font-weight: 700;
+}
+#contenedor-carrito table thead td{
+    background: #E67125;
+    color: #fff;
+    border: none;
+    padding: 6px 0;
+    font-size: 2rem;
+    text-align: center;
+}
+#contenedor-carrito table td{
+    border: 1px solid #b6b3b3;
+    text-align: center;
+    font-size: 2rem;
+}
+#contenedor-carrito table tbody img{
+    width: 120px;
+    object-fit: cover;
+}
+#contenedor-carrito table td a{
+    color: #E67125;
+}
+#cotenedor-carrito table td:nth-child(1){
+    width: 100px;
+}#contenedor-carrito table tbody i{
+    color: #8d8c89
+} 
+
+
+
+#total-compra {
+    position:absolute;
+    text-align: center;
+    font-size: 2rem;
+    left: 35%;
+    top: 60%;
+}
+
+
+#total-compra .compra h5{
+    background: #E67125;
+    color: #fff;
+    border: none;
+    padding: 6px 0;
+    font-size: 2rem;
+}
+#total-compra .compra p,
+#total-compra .compra input{
+    padding: 0 12px;
+}
+#total-compra .compra input{
+    height: 44px;
+}
+#total-compra .compra input{
+    margin: 0 0 20px 12px;
+}
+#total-compra .compra div>div{
+    padding: 0 12px
+}
+#total-compra .compra h6{
+    color: #2a2a2a;
+    font-size: 2rem;
+    
+}
+.second-hr{
+    background: #b8b7b3;
+    width: 100%;
+    height: 1px;
+}
+#total-compra .compra div>button{
+    margin: 0 12px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    background:#E67125;
+    color: #FFFF;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border: 0;
+    border-radius: 30px;
+    outline: 0;
+    padding: 12px;
+}
+
+
+.botones-redess{
+    position:absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.botones-redess a{    
+    background-color: #E67125;
+    justify-content: space-around;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align:center;
+    color: white;
+    font-size: 20px;
+    border-radius:30px;
+    cursor:pointer;
+    text-decoration:none;
+}
+.botones-redess a:hover{
+    transform: scale(1.2);
+}
+

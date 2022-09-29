@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html lang="en" dir="ltr"> 
+    <head> 
+        <script src="https://kit.fontawesome.com/0b5a18e659.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-16"/> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Ecommerce | Ferreteria </title> 
+        <link rel="icon" type="image/png" href="/img/logo.png"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style_carrito.css"/>
+                
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img src="img/logo.png" alt="" />
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/nosotros.html">Nosotros</a></li>
+                    <li><a href="/tienda.html">Tienda</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="buscar">
+                <input type="text" placeholder="Busar" required>
+                <div class="btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <section class="botones-login-carrito">
+                <a href="login.html" class="fa-solid fa-user"></a>
+                <a href="carrito.html" class="fa-solid fa-cart-shopping"></a>
+            </section>    
+                
+        </header>
+
+        
+        <section id="contenedor-carrito" class="container my-5">
+            <h2>Carrito</h2>
+            <table width="80%">
+                <thead>
+                    <tr>
+                        <td>Imagen</td>
+                        <td>Producto</td>
+                        <td>Precio</td>
+                        <td>Cantidad</td> 
+                        <td>Total</td>
+                        <td>Eliminar</td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><img src="img/logo.png" alt=""></td>
+                        <td>
+                            <h5>pintura
+                            </h5>
+                        </td>
+                        <td><h5>$00.000</h5></td>
+                        <td><input class="w-25 pl-1" value="1" type="number"></td>
+                        <td><h5>$00.000</h5></td>
+                        <td><a href="#" class="fa-solid fa-trash"></a></td>  
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+
+        <section id="total-compra" class="container">
+            <div class="row">
+                <div class="compra col-lg-6 col-md-6 col-12">
+                    <div>
+                        <h5>Compra Total
+                        </h5>
+                        <div class="d-flex justify-content-between">
+                            <h6>Subtotal</h6>
+                            <p>$215.000
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>Envío</h6>
+                            <p>$215.000
+                            </p>
+                        </div>
+                        <hr class="second-hr">
+                        <div class="d-flex justify-content-between">
+                            <h6>Total</h6>
+                            <p>$215.000</p>
+                        </div>
+                        <button>PAGAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="botones-redess">
+            <a href="https://www.facebook.com/homecentercolombia" target="_blank" class="fa-brands fa-facebook"></a>
+            <a href="https://www.youtube.com/c/homecentercolombia" target="_blank" class="fa-brands fa-youtube"></a>
+        </section>  
+    </body>
+</html> 
