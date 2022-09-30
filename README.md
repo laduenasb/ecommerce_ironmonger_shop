@@ -9,4 +9,4 @@ Conformación del equipo https://docs.google.com/document/d/1aInVQuaUD7cmDPeMSCt
 
 Endpoints desarrollo backend Postman: https://documenter.getpostman.com/view/23052515/VUxUN5Ge
 
-Endpoints backend deploy in heroki: https://documenter.getpostman.com/view/23052515/2s83tCLtiw
+Endpoints backend deploy in heroku: https://documenter.getpostman.com/view/23052515/2s83tCLtiw
