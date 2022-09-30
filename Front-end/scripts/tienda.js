@@ -199,24 +199,6 @@ function updatePage(productos,nombre_categoria) {
     }
 }
 
-
-const API = 'https://superheroes-project-default-rtdb.firebaseio.com/heroes'
-
-const getAll = async() => {
-    const response = await fetch(API + '.json')
-    const data = await response.json()
-    globalData = data
-    console.log(data)
-    updatePage()
-}
-
-const getHeroe = async(id) => {
-    const URL = `${API}/${id}.json`
-    const response = await fetch(URL)
-    const data = await response.json()
-    console.log(data);
-}
-
 const getInfoProducto = ()=>{
     const uri_up_product="https://ferreteria-ecommerce-backend.herokuapp.com/api/v1/producto/guardarProducto"
 	let producto = {
