@@ -3,7 +3,7 @@ let previewBox = preveiwContainer.querySelectorAll('.preview');
 
 document.querySelectorAll('.contenedor-productos .producto').forEach(producto =>{
 producto.onclick = () =>{
-    preveiwContainer.style.display = 'flex';
+    // preveiwContainer.style.display = 'flex';
     let name = producto.getAttribute('data-name');
     previewBox.forEach(preview =>{
     let target = preview.getAttribute('data-target');
@@ -38,7 +38,7 @@ liItem.forEach(li => {
     catItem.forEach(contenedor => {
         contenedor.style.display = 'none';
         if (contenedor.getAttribute('data-filter') == value.toLowerCase()) {
-            contenedor.style.display = 'block';
+            contenedor.style.display = 'flex';
         
         }
     })
