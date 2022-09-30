@@ -1,4 +1,4 @@
-const URL_API="http://localhost:8083/api/v1/cliente/guardarCliente"
+const URL_API="https://ferreteria-ecommerce-backend.herokuapp.com/api/v1/cliente/guardarCliente"
 
 const cedula=document.getElementById("cedula")
 const nombre=document.getElementById("nombre")

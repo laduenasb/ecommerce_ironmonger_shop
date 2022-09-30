@@ -1,7 +1,6 @@
 package com.ferreteria.ecommerce.controller;
 
 import com.ferreteria.ecommerce.dto.ProductoDTO;
-import com.ferreteria.ecommerce.model.Categoria;
 import com.ferreteria.ecommerce.model.Producto;
 import com.ferreteria.ecommerce.service.CategoriaService;
 import com.ferreteria.ecommerce.service.ProductoService;
