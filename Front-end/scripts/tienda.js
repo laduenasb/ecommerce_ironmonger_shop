@@ -184,7 +184,7 @@ function updatePage(productos,nombre_categoria) {
         
       </div>
       <div class="modal-body">
-        <p>¿Está seguro que quiere borrar el heroe?</p>
+        <p>¿Está seguro que quiere borrar el producto?</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
