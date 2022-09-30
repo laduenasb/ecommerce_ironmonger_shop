@@ -33,6 +33,10 @@ public class ClienteController {
     public Cliente obtenerClientePorCedula(@PathVariable String cedula){
         return clienteService.encontrarClientePorCedula(cedula);
     }
+    @GetMapping("/obtenerClientePorCorreo/{correo}")
+    public Cliente obtenerClientePorCorreo(@PathVariable String correo){
+        return clienteService.encontrarClientePorCorreo(correo);
+    }
     //UPDATE
     @PutMapping("/actualizarCliente")
     public Cliente actualizarCliente(@RequestBody Cliente cliente){

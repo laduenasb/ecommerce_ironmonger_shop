@@ -43,4 +43,7 @@ public class ClienteService {
     public Cliente encontrarClientePorCedula(String cedula){
         return clienteRepository.findByCedula(cedula);
     }
+    public Cliente encontrarClientePorCorreo(String correo){
+        return clienteRepository.findByCorreo(correo);
+    }
 }
